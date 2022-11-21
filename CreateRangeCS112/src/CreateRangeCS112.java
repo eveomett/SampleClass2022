@@ -7,18 +7,16 @@ import java.util.Arrays;
 public class CreateRangeCS112 {
     public static void main(String[] args) {
         Range myRange1 = new Range(10);  // This is:
-        System.out.print("myRange1 is : " + myRange1 + "\n");
+        System.out.println("myRange1 is : " + myRange1 + ". Its length is " + myRange1.getLength());
 
         Range myRange2 = new Range(2, 10, 2); // This is:
-        System.out.print("myRange2 is : " + myRange2 + "\n");
+        System.out.println("myRange2 is : " + myRange2 + ". Its length is " + myRange2.getLength());
 
         Range myRange3 = new Range(6,4,1); // This is:
-        System.out.print("myRange3 is : " + myRange3 + "\n");
+        System.out.println("myRange3 is : " + myRange3 + ". Its length is " + myRange3.getLength());
 
         Range myRange4 = new Range(-1); // This is:
-        System.out.print("myRange4 is: " + myRange4 + "\n");
-
-        myRange1.print();  // Different print
+        System.out.println("myRange4 is: " + myRange4 + ". Its length is " + myRange4.getLength());
     }
 }
 
@@ -28,8 +26,23 @@ public class CreateRangeCS112 {
  * elements is array of numbers
  */
 class Range {
-    int length;
-    int[] elements;
+    private int length;
+    private int[] elements;
+    /**
+     * get length of Range
+     * @return length
+     */
+    int getLength(){
+        return this.length;
+    }
+
+    /**
+     * get Array of elements in Range
+     * @return elements
+     */
+    int[] getElements(){
+        return this.elements;
+    }
     /**Constructs sequence of integers stepping by 1
      * @param num end of sequence from 0 to num (not inclusive)
      */
