@@ -24,8 +24,7 @@ public class ArrayListPracticeCS112 {
 /**Comparison: Arrays, ArrayLists
  */
         int[] intArray = new int[2];
-        ArrayList<Integer> intArrayList0 = new ArrayList<Integer>();  // Initial size 0
-        ArrayList<Integer> intArrayList = new ArrayList<Integer>(2); // Initial size 2
+        ArrayList<Integer> intArrayList = new ArrayList<Integer>();  // Initial size 0
 
         intArray[0] = -3;
         intArrayList.add(-3);  // autoboxing
