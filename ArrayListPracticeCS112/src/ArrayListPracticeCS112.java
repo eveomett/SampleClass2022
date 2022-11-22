@@ -21,10 +21,10 @@ public class ArrayListPracticeCS112 {
         System.out.println(myStrings.size()); // 3
         System.out.println(myStrings.get(1)); // is
 
-/**Comparison: Arrays, ArrayLists
- */
+        /**Comparison: Arrays, ArrayLists
+        */
         int[] intArray = new int[2];
-        ArrayList<Integer> intArrayList = new ArrayList<Integer>();  // Initial size 0
+        ArrayList<Integer> intArrayList = new ArrayList<>();
 
         intArray[0] = -3;
         intArrayList.add(-3);  // autoboxing
@@ -37,17 +37,28 @@ public class ArrayListPracticeCS112 {
 
         System.out.println(intArray[1]);  // 42
         System.out.println(intArrayList.get(1));    // 42  (autoboxing)
-
+        /**
+        * printing
+        */
         System.out.println(Arrays.toString(intArray));  // [99, 42]
         System.out.println(intArrayList);  // [99, 42]
-
+        /**
+         * for each usage
+         */
         for (int element : intArray){  // 99 42
             System.out.print(element + " ");
         }
         for (Integer element : intArrayList){  // 99 42
             System.out.print(element + " ");
         }
-
+        /**
+        * ArrayLists and capacity vs size
+        */
+        int[] testArray = new int[5];
+        ArrayList<Integer> testArrayList = new ArrayList<>(5);  // Initial size 0, initial *capacity* 5
+        for (int i=0; i<5; i+=2){testArray[i] = i;} // compiler OK with this
+        //for (int i=0; i<4; i++){testArrayList.set(i,i);} // compiler NOT OK with this
+        //testArrayList.set(0,1); // compiler NOT OK with this either
         /**Remove Integer needs autoboxing
          */
         // intArrayList.remove(99);  // Will not compile!
