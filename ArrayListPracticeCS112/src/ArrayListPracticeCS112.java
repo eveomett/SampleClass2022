@@ -24,7 +24,7 @@ public class ArrayListPracticeCS112 {
         /**Comparison: Arrays, ArrayLists
         */
         int[] intArray = new int[2];
-        ArrayList<Integer> intArrayList = new ArrayList<>();
+        ArrayList<Integer> intArrayList = new ArrayList<Integer>();
 
         intArray[0] = -3;
         intArrayList.add(-3);  // autoboxing
@@ -55,7 +55,7 @@ public class ArrayListPracticeCS112 {
         * ArrayLists and capacity vs size
         */
         int[] testArray = new int[5];
-        ArrayList<Integer> testArrayList = new ArrayList<>(5);  // Initial size 0, initial *capacity* 5
+        ArrayList<Integer> testArrayList = new ArrayList<Integer>(5);  // Initial size 0, initial *capacity* 5
         for (int i=0; i<5; i+=2){testArray[i] = i;} // compiler OK with this
         //for (int i=0; i<4; i++){testArrayList.set(i,i);} // compiler NOT OK with this
         //testArrayList.set(0,1); // compiler NOT OK with this either
