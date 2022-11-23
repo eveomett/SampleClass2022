@@ -9,7 +9,7 @@ public class FavoriteFoods {
     static void printFavs(String[] favs){
         int i=0;
         for (String fav : favs){
-            System.out.println(fav + " is my favorite food, number " + (i+1));
+            System.out.println("My number "  + (i+1) + " favorite food is " + fav);
             i++;
         }
     }
