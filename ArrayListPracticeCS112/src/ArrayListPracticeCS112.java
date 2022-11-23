@@ -30,7 +30,7 @@ public class ArrayListPracticeCS112 {
         intArrayList.add(-3);  // autoboxing
 
         intArray[1] = 42;
-        intArrayList.add(42);  // autoboxing
+        intArrayList.add(1,42);  // autoboxing
 
         intArray[0] = 99;
         intArrayList.set(0, 99);  // autoboxing
@@ -57,7 +57,7 @@ public class ArrayListPracticeCS112 {
         int[] testArray = new int[5];
         ArrayList<Integer> testArrayList = new ArrayList<Integer>(5);  // Initial size 0, initial *capacity* 5
         for (int i=0; i<5; i+=2){testArray[i] = i;} // compiler OK with this
-        //for (int i=0; i<4; i++){testArrayList.set(i,i);} // compiler NOT OK with this
+        //for (int i=0; i<4; i+=2){testArrayList.add(i,i);} // compiler NOT OK with this
         //testArrayList.set(0,1); // compiler NOT OK with this either
         /**Remove Integer needs autoboxing
          */
